@@ -36,6 +36,13 @@ app.get('/about',(req,res)=>{
   });
 
 });
+app.get('/portfolio',(req,res)=>{
+  res.render('portfolio.hbs',{
+    pageTitle: `Portfolio Page`,
+    welcome: `Hii this is your portfoilio page`
+  });
+
+});
 app.get('/Bad',(req,res)=>{
   res.send({
     errorMessage:'Unable to fullfill your request'
